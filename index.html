@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaceBook Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cc7075cb8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <img src="socialbook_img/images/logo2.png" class="logo">
+      <ul>
+        <li><img src="/socialbook_img/images/notification.png"></li>
+        <li><img src="/socialbook_img/images/inbox.png"></li>
+        <li><img src="/socialbook_img/images/video.png"></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+
+      <div class="search-box">
+        <img src="/socialbook_img/images/search.png">
+        <input type="text" placeholder="Search">
+      </div>
+
+      <div class="nav-user-icon online" onclick="settingsMenuToggle();">
+        <img src="/socialbook_img/images/profile-pic.png">
+      </div>
+    </div>
+
+    <!-- ----------Settings Menu-- -->
+
+    <div class="settings-menu">
+<div id="dark-btn">
+  <span></span>
+</div>
+
+      <div class="settings-menu-inner">
+
+        <div class="user-profile">
+          <img src="/socialbook_img/images/profile-pic.png">
+          <div>
+            <p>Matt Donavan</p>
+            <a href="#">See your profile</a>
+          </div>
+        </div>
+
+        <hr>
+        <div class="user-profile">
+          <img src="/socialbook_img/images/feedback.png">
+          <div>
+            <p>Give feedback</p>
+            <a href="#">Help us to improve the design</a>
+          </div>
+        </div>
+        <hr>
+
+        <div class="settings-links">
+          <img src="/socialbook_img/images/setting.png" class="settings-icon">
+          <a href="#">Settings & Privacy <img src="/socialbook_img/images/arrow.png" width="10px"></a>
+        </div>
+
+        <div class="settings-links">
+          <img src="/socialbook_img/images/help.png" class="settings-icon">
+          <a href="#">Help & Support<img src="/socialbook_img/images/arrow.png" width="10px"></a>
+        </div>
+
+        <div class="settings-links">
+          <img src="/socialbook_img/images/display.png" class="settings-icon">
+          <a href="#">Display & Accessibility <img src="/socialbook_img/images/arrow.png" width="10px"></a>
+        </div>
+
+        <div class="settings-links">
+          <img src="/socialbook_img/images/logout.png" class="settings-icon">
+          <a href="#">Logout<img src="/socialbook_img/images/arrow.png" width="10px"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <div class="container">
+
+    <!-- ----------left-sidebar-- -->
+    <div class="left-sidebar">
+
+      <div class="important-links">
+        <a href="#"><img src="/socialbook_img/images/news.png">Latest News</a>
+        <a href="#"><img src="/socialbook_img/images/friends.png">Friends</a>
+        <a href="#"><img src="/socialbook_img/images/group.png">Groups</a>
+        <a href="#"><img src="/socialbook_img/images/marketplace.png">Marketplace</a>
+        <a href="#"><img src="/socialbook_img/images/watch.png">Watch</a>
+        <a href="#">See more</a>
+      </div>
+
+      <div class="shortcut-links">
+        <p>Your shortcuts</p>
+        <a href="#"><img src="/socialbook_img/images/shortcut-1.png">Web Developers</a>
+        <a href="#"><img src="/socialbook_img/images/shortcut-2.png">Web Design course</a>
+        <a href="#"><img src="/socialbook_img/images/shortcut-3.png">Fullstack</a>
+        <a href="#"><img src="/socialbook_img/images/shortcut-4.png">Web Experts</a>
+      </div>
+
+    </div>
+
+
+    <!------- main-content ---->
+    <div class="main-content">
+
+      <div class="story-gallery">
+
+        <div class="story story1">
+          <img src="/socialbook_img/images/upload.png">
+          <p>Post a Story</p>
+        </div>
+
+        <div class="story story2">
+          <img src="/socialbook_img/images/member-1.png">
+          <p>Allison</p>
+        </div>
+
+        <div class="story story3">
+          <img src="/socialbook_img/images/member-2.png">
+          <p>Haft</p>
+        </div>
+
+        <div class="story story4">
+          <img src="/socialbook_img/images/member-3.png">
+          <p>Queen</p>
+        </div>
+
+        <div class="story story5">
+          <img src="/socialbook_img/images/member-4.png">
+          <p>Jackson</p>
+        </div>
+      </div>
+
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="/socialbook_img/images/profile-pic.png">
+          <div>
+            <p>Matt Donavan</p>
+            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+          </div>
+        </div>
+
+        <div class="post-input-container">
+          <textarea rows="3" placeholder="Whats on your mind, Mwan wange?"></textarea>
+        </div>
+
+        <div class="add-post-links">
+
+          <a href="#"><img src="/socialbook_img/images/live-video.png">Live video</a>
+          <a href="#"><img src="/socialbook_img/images/photo.png">Photo/Video</a>
+          <a href="#"><img src="/socialbook_img/images/feeling.png">Feeling/Activity</a>
+        </div>
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="/socialbook_img/images/profile-pic.png">
+            <div>
+              <p>Matt Donavan</p>
+              <span>September 25 2024 , 11:26 Am </span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text"> The <span>Billionaire's slogan</span> is and have always been get prepared for the
+          hardwork,put in the work and focus on the craft and trust the process you'll get better and then rich
+          <a href="#">#GetRichOrDieTrying!</a>
+          <a href="#">#GrowthMentality</a>
+        </p>
+
+        <img src="/socialbook_img/images/lambo.jpg" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/socialbook_img/images/like-blue.png">1.2k</div>
+            <div><img src="/socialbook_img/images/comments.png">468</div>
+            <div><img src="/socialbook_img/images/share.png">105</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="/socialbook_img/images/profile-pic.png">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="/socialbook_img/images/profile-pic.png">
+            <div>
+              <p>James Jackson</p>
+              <span>September 5 2017 , 1:29 Pm </span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text"> Like and share videos with friends,tag<span>@Easy Tutorials</span> facebook page on your
+          post.Ask your doubts in the comments
+          <a href="#">#EasyTutorials</a>
+          <a href="#">#YouTubeChannel</a>
+        </p>
+
+        <img src="/socialbook_img/images/feed-image-1.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/socialbook_img/images/like.png">203</div>
+            <div><img src="/socialbook_img/images/comments.png">68</div>
+            <div><img src="/socialbook_img/images/share.png">5</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="/socialbook_img/images/profile-pic.png">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="/socialbook_img/images/profile-pic.png">
+            <div>
+              <p>Don Carlo</p>
+              <span>September 25 2024 , 11:26 Am </span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text"> The <span>Billionaire's slogan</span> is and have always been get prepared for the
+          hardwork,put in the work and focus on the craft and trust the process you'll get better and then rich
+          <a href="#">#GetRichOrDieTrying!</a>
+          <a href="#">#GrowthMentality</a>
+        </p>
+
+        <img src="/socialbook_img/images/feed-image-2.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/socialbook_img/images/like-blue.png">152k</div>
+            <div><img src="/socialbook_img/images/comments.png">46.8k</div>
+            <div><img src="/socialbook_img/images/share.png">105k</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="/socialbook_img/images/profile-pic.png">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="/socialbook_img/images/kaka.jpg">
+            <div>
+              <p>Ricardo Kaka</p>
+              <span>January 25 2018 , 19:26 pm </span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text"> in 2007 when i won <span>The Golden Ball</span>I was so happy that it felt like a dream,it
+          is a dream come true especially for a kid with poor background like mine and to be able to win one of the high
+          if not the highest individual trophy.
+          <a href="#">#Rossoneri/Diavolo!</a>
+          <a href="#">#GoldenBall</a>
+        </p>
+
+        <img src="/socialbook_img/images/kaka-goldenball.jpg" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/socialbook_img/images/like-blue.png">126k</div>
+            <div><img src="/socialbook_img/images/comments.png">49k</div>
+            <div><img src="/socialbook_img/images/share.png">10k</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="/socialbook_img/images/profile-pic.png">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="/socialbook_img/images/ARTETA.jpg">
+            <div>
+              <p>Mikel Arteta</p>
+              <span>September 5 2024 , 9:04 Am </span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text"> The <span>Arsenal's</span> target this year is to put in the work needed and make all the
+          sacrifices we have to make to compete to our best and with hopes to win trophies
+          <a href="#">#Arsenal2024!</a>
+          <a href="#">#COYG</a>
+        </p>
+
+        <img src="/socialbook_img/images/Arsenal.jpg" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/socialbook_img/images/like-blue.png">24k</div>
+            <div><img src="/socialbook_img/images/comments.png">4.6k</div>
+            <div><img src="/socialbook_img/images/share.png">15k</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="/socialbook_img/images/profile-pic.png">
+          </div>
+        </div>
+
+      </div>
+
+      <button type="button" class="load-more-btn">Load More</button>
+
+    </div>
+    <!-- ------- right-sidebar--------- -->
+
+    <div class="right-sidebar">
+
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="#">See all</a>
+      </div>
+
+      <div class="event">
+        <div class="left-event">
+          <h3>18</h3>
+          <span>March</span>
+        </div>
+
+        <div class="right-event">
+
+          <h4>Social Media</h4>
+          <p><i class="fa-sharp fa-solid fa-location-dot"></i> Ineza Shema Arstide</p>
+          <a href="#">More Info</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="event">
+        <div class="left-event">
+          <h3>22</h3>
+          <span>March</span>
+        </div>
+
+        <div class="right-event">
+
+          <h4>Land Survey</h4>
+          <p><i class="fa-sharp fa-solid fa-location-dot"></i> Habaguhirwa Amos</p>
+          <a href="#">More Info</a>
+
+        </div>
+      </div>
+
+
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="#">Close</a>
+      </div>
+      <img src="/socialbook_img/images/advertisement.png" class="sidebar-ads">
+
+
+      <div class="sidebar-title">
+        <h4>Conversation</h4>
+        <a href="#">Hide Chat</a>
+      </div>
+
+      <div class="online-list">
+        <div class="online">
+
+          <img src="/socialbook_img/images/member-1.png">
+        </div>
+        <p>Andrew Tate</p>
+      </div>
+
+
+      <div class="online-list">
+        <div class="online">
+
+          <img src="/socialbook_img/images/member-2.png">
+        </div>
+        <p>Shema Giscard</p>
+      </div>
+
+
+      <div class="online-list">
+        <div class="online">
+
+          <img src="/socialbook_img/images/member-3.png">
+        </div>
+        <p>Gisa Caleb</p>
+      </div>
+
+
+      <div class="online-list">
+        <div class="online">
+
+          <img src="/socialbook_img/images/member-4.png">
+        </div>
+        <p>Irumva Jackson</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>@Copyright OnlyHerve34 2024 September</p>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
